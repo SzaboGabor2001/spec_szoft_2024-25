@@ -1,0 +1,49 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\usepackage{lipsum}
+\usepackage{hulipsum}
+\usepackage{blindtext}
+
+\usepackage[magyar, english]{babel}
+
+\begin{document}
+
+\selectlanguage{magyar}
+\frenchspacing
+
+\title{1a 3. és 4. feladatok, 1b}
+\date{\today}
+\maketitle
+
+1a.3:\\
+\texttt{\textbf{typewriter + bold}} \\
+\textsc{\textit{small caps + italic}} \\
+\textsl{\textsf{slanted + sans serif}} \\
+\emph{\textbf{bold}, \textit{italic}, \textsc{small caps}, normal} \\
+UPPERCASE, {\large LARGE}
+
+1a.4:\\
+\framebox{\reflectbox{parried}} \\
+\scalebox{-2}[1]{horizontal} \\
+\rotatebox{90}{kilencven}, \rotatebox{270}{kétszázhetven} \\
+\colorbox{black}{\textcolor{white}{black on white}} \\
+\fcolorbox{red}{white}{\textcolor{red}{red in red}} \\
+
+1b.1:\\
+\begin{otherlanguage}{latin}
+\foreignlanguage{latin}{\noindent{\bigskip{\blindtext}} \par
+\raggedleft{\lipsum} \par}
+\end{otherlanguage}
+\raggedright \linespread{1.6}{\hulipsum} \par
+
+1b.2:\\
+``\today'' \par
+\foreignlanguage{latin}{'\today'}
+
+1b.3:\\
+
+\end{document}
+
